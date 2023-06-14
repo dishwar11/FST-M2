@@ -1,0 +1,87 @@
+{
+  "id": "8f1942d9-9ee9-44c9-b803-b1c694382839",
+  "version": "2.0",
+  "name": "Test1",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "7e30905e-367a-4bee-a239-ef86c0db7cce",
+    "name": "google test",
+    "commands": [{
+      "id": "be43c80b-1470-493b-b3a9-3280f438e5ee",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31369a15-6889-4ae9-a863-d1e73c8eef97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1023x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed8b1340-5bcd-4c50-b279-fdfeefeceb04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_w:nth-child(1) > .gb_v", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gb']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff7b04f8-48c8-4be9-bf69-f60999f05bd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0a01111-1af3-4f8d-bbf4-b21e2c964135",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "22a2eb96-01b1-4505-8688-583f722d2efb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#C6KJZLXiGIDLseMPhu622AI__19 .O3S9Rb",
+      "targets": [
+        ["css=#C6KJZLXiGIDLseMPhu622AI__19 .O3S9Rb", "css:finder"],
+        ["xpath=//div[@id='C6KJZLXiGIDLseMPhu622AI__19']/a/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a7a85cc9-5f24-49d4-a0df-d42920c5de24",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7e30905e-367a-4bee-a239-ef86c0db7cce"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
